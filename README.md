@@ -1,5 +1,14 @@
 # TabNews_Terminal
 
+```
+      ▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▌
+   ▄▄██▌█░░TabNews░░░▐
+▄▄▄▌▐██▌█░░░░░░░░░░░░▐
+███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▌
+▀❍▀▀▀▀▀▀▀❍❍▀▀▀▀▀▀❍❍▀
+```
+
+
 ![](https://raw.githubusercontent.com/Jetrom17/TabNews_Terminal/main/Screenshot_20221227-113420.png)
 
 <details>
