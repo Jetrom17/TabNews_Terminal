@@ -3,51 +3,23 @@
 ```
       ▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▌
    ▄▄██▌█░░TabNews░░░▐
-▄▄▄▌▐██▌█░░░░░░░░░░░░▐
+▄▄▄▌▐██▌█░░░V:1.1░░░░▐
 ███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▌
 ▀❍▀▀▀▀▀▀▀❍❍▀▀▀▀▀▀❍❍▀
 ```
 
 
-![](https://raw.githubusercontent.com/Jetrom17/TabNews_Terminal/main/Screenshot_20221227-113420.png)
+### Changelog:
 
-<details>
-  <summary>Requisitos</summary>
-  <p>- Git</p>
-  <p>- Linux (Unix)</p>
-  <p>- Python [3]</p>
-  <p>- Aproximadamente 500 MB de espaço livre</p>
-  <p>- Links</p>
-  <p>- (104.30) Reolução adequada para PCs</p>
-  <p>- Colorama</p>
-  <p>- Saber o que é TabNews 😑</p>
-</details>
-
-<details>
-<summary>Testado em</summary>
-<p>- Termux</p>
-<p>- Linux Mint</p>
-<p>- Jupyter-lab e Jupyter-Notebook</p>
-</details>
-
-#
+- [1.0](https://www.tabnews.com.br/Jetrom/tab-py)
 
 ### Objetivo?
 
 - Criado para facilitar a busca no TabNews pelo Terminal, sendo os selecionados os **top 8**. Em vez de entrar no seu browser, digitar para navegar no TabNews, apenas para pegar a API... Com `tab.py` é possível acessar rapidamente em alguns cliques e de forma offline, por exemplo. Offline em alguns pontos, essa ferramenta está na versão 1.0 com cerca de 144 linhas, podendo ser acrescentado futuramente. Artigos precisam de acesso a internet para ler. Imagens ou gifs, não são carregados, apenas textos. Tudo isso carregado no Terminal. Rápido, seguro e limpo.
 #
 
-### Como instalo?
+<details><summary>Como instalo?</summary>
 
-- Para android, usa se o [Termux](https://termux.dev/en/). Copie e cole, depois veja a explicação que cada comando faz.
-```bash
-pip install coloroma
-```
-Baixe primeiramente o "coloroma".
-```bash
-pkg update -y && pkg upgrade -y && pkg install git -y && pkg install python3 -y
-```
-`pkg` é o comando usado e criado pelo Termux, similar ao `apt`. `update/upgrade` são similares o que fazem em relação aos pcaotes e repositórios. `&&` Estou dizendo "faça mais isso". `-y` Estou dizendo "aceito todas as dependências, não me pergunte".
 ```bash
 git clone https://github.com/Jetrom17/TabNews_Terminal.git && cd TabNews_Terminal && ls && python3 tab.py
 ```
@@ -76,7 +48,21 @@ Isso deve instalar o apt no seu sistema operacional. Depois disso, você poderá
 Se o apt foi removido do seu sistema operacional por algum motivo, você pode tentar recuperá-lo usando o comando apt-get para instalá-lo novamente. No entanto, é possível que você precise instalar alguns outros pacotes antes de poder usar o `apt-get` para instalar o apt. Se você estiver enfrentando esse problema, é recomendável procurar ajuda em fóruns ou comunidades online especializadas em sistemas operacionais baseados em Debian.
 
 @ChatGPT</p></details>
+</details>
 
 #
+# O que há de novo?
 
+- Se pedido meu e-mail para contato, terá exebição do Super Mario!
+- Novos top 7 de Janeiro de 2023.
+- Utilização experimental do Termux-API.
+- Booleana para verificar dependências.
+- "z" uso para verificar atualizações em experimental.
+
+<details><summary>Screenhost</summary>
+<img src="photo_2023-01-05_19-44-24.jpg">
+<img src="photo_2023-01-05_19-44-29.jpg">
+</details>
+
+#
 Lembrando que o meu script em python é open source 🤲 podes bifurcar no meu repositório no Github, podendo contribuir ou modificar para seu ou sendo outro tema (Não TabNews).
