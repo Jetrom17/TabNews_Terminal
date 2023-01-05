@@ -15,7 +15,7 @@
 
 ### Objetivo?
 
-- Criado para facilitar a busca no TabNews pelo Terminal, sendo os selecionados os **top 8**. Em vez de entrar no seu browser, digitar para navegar no TabNews, apenas para pegar a API... Com `tab.py` é possível acessar rapidamente em alguns cliques e de forma offline, por exemplo. Offline em alguns pontos, essa ferramenta está na versão 1.0 com cerca de 144 linhas, podendo ser acrescentado futuramente. Artigos precisam de acesso a internet para ler. Imagens ou gifs, não são carregados, apenas textos. Tudo isso carregado no Terminal. Rápido, seguro e limpo.
+- Criado para facilitar a busca no TabNews pelo Terminal, sendo os selecionados os **top 7**. Em vez de entrar no seu browser, digitar para navegar no TabNews, apenas para pegar a API... Com `tab.py` é possível acessar rapidamente em alguns cliques e de forma offline, por exemplo. Offline em alguns pontos, essa ferramenta está na versão 1.1 com cerca de 172 linhas, podendo ser acrescentado futuramente. Artigos precisam de acesso a internet para ler. Imagens ou gifs, não são carregados, apenas textos. Tudo isso carregado no Terminal. Rápido, seguro e limpo.
 #
 
 <details><summary>Como instalo?</summary>
