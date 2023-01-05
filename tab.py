@@ -149,6 +149,11 @@ while loop:
         os.system("git clone https://github.com/Jetrom17/TabNews_Terminal.git")
         os.system("cd TabNews_Terminal")
         os.system("python3 tab.py")
+        rmenu = input("Voltar ao menu? (y/n): ")
+        if rmenu == "y":
+            menu()
+        else:
+            break
     elif what == "x":
         print("Tchau!")
         break
