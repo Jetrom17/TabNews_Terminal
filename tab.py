@@ -1,5 +1,6 @@
 import os
 import colorama
+import importlib
 from colorama import init, Fore, Style
 try:
     importlib.import_module('colorama')
