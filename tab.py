@@ -1,5 +1,5 @@
 import os
-import importlib
+import colorama
 from colorama import init, Fore, Style
 try:
     importlib.import_module('colorama')
@@ -23,21 +23,25 @@ Github: Jetrom17
 Version 1.1
 ----
 🤖 Queira contribuir: https://github.com/Jetrom17/TabNews_Terminal.git
+ou
+Doe um tabCoin =)
 ----
 ==========================================
 00. E-mail para sugestões
 ==========================================
-1. + de 15 alternativas ao Heroku - mas nem todas grátis!
-2. CHAT GPT: COMO FUNCIONA A PLATAFORMA de I.A
-3. Pitch: App TabNews em Flutter
+1. 30 comandos básico para ser usado no Terminal Linux + [Bônus]
+2. API para consulta de encomendas 📦
+3. [Pitch] - TabNews Mobile - React Native
 4. MAIS Extensões MARAVILHOSAS para o Vscode!
 5. Me dê API
 6. Brasil API
 7. Me dê RSS
 ==========================================
-|Termux|
-
-8. Termux-API
+   |Termux|
+      ||
+|8. Termux-API|
+---------------
+9. Deezer - Dados vazados
 ==========================================
 z. Verificar atualização deste repositório 
 x. SAIR
@@ -90,21 +94,21 @@ while loop:
                 if rmenu == "y":
                     menu()
     elif what == "1":
-        os.system("links https://www.tabnews.com.br/uriel/de-15-alternativas-ao-heroku-mas-nem-todas-gratis")
+        os.system("links https://www.tabnews.com.br/Jetrom/30-comandos-basico-para-ser-usado-no-terminal-linux-bonus")
         rmenu = input("Voltar ao menu? (y/n): ")
         if rmenu == "y":
             menu()
         else:
             break
     elif what == "2":
-        os.system("links https://www.tabnews.com.br/LucasEd/chat-gpt-como-funciona-a-plataforma-capaz-de-escrever-artigos-e-roteiros")
+        os.system("links https://www.tabnews.com.br/NathanFirmo/api-para-consulta-de-encomendas")
         rmenu = input("Voltar ao menu? (y/n): ")
         if rmenu == "y":
             menu()
         else:
             break
     elif what == "3":
-        os.system("links https://www.tabnews.com.br/adlerluiz/pitch-app-tabnews-em-flutter")
+        os.system("links https://www.tabnews.com.br/danielkv/tabnews-mobile-react-native")
         rmenu = input("Voltar ao menu? (y/n): ")
         if rmenu == "y":
             menu()
@@ -144,6 +148,14 @@ while loop:
         if rmenu == "y":
             menu()
         else:
+            break
+    elif what == "9":
+        os.system("termux-open-url https://www.tabnews.com.br/Jetrom/deezer-dados-vazados")
+        rmenu = input("Voltar ao menu? (y/n): ")
+        if rmenu == "y":
+            menu()
+        else:
+            break
     elif what == "z":
         os.system("rm -rf TabNews_Terminal")
         os.system("git clone https://github.com/Jetrom17/TabNews_Terminal.git")
