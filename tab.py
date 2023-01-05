@@ -1,13 +1,21 @@
 import os
+import importlib
 from colorama import init, Fore, Style
-os.system("pip install colorama")
+try:
+    importlib.import_module('colorama')
+except ImportError:
+    os.system("pip install colorama")
+try:
+    importlib.import_module('links')
+except ImportError:
+    os.system("apt install links")
 def menu():
 
     print("""
       ▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▌
-   ▄▄██▌█░░TabNews░░░▐
-▄▄▄▌▐██▌█░░░░░░░░░░░░▐
-███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▌
+   ▄▄██▌█░░TabNews░░░▐  -----
+▄▄▄▌▐██▌█░░░░░░░░░░░░▐ ----
+███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▌ -------
 ▀❍▀▀▀▀▀▀▀❍❍▀▀▀▀▀▀❍❍▀
 ========================================
 Por: Jetrom
@@ -23,12 +31,15 @@ Version 1.1
 2. CHAT GPT: COMO FUNCIONA A PLATAFORMA de I.A
 3. Pitch: App TabNews em Flutter
 4. MAIS Extensões MARAVILHOSAS para o Vscode!
-5. 🔧 14 ferramentas essenciais para aumentar sua produtividade em 10x
-6. Sobre Tabcoins no TabNews
+5. Me dê API
+6. Brasil API
 7. Me dê RSS
-8. Me dê API
-999. Baixar ferramenta "links"
 ==========================================
+|Termux|
+
+8. Termux-API
+==========================================
+z. Verificar atualização deste repositório 
 x. SAIR
 ==========================================
 """)
@@ -46,7 +57,7 @@ while loop:
         print("================================")
         if hm == "y":
             print("========================================================")
-            repo = input("Opa! Antes te dá meu e-mail, posso atualizar e dá upgrade em seu repositório, se disponível? (y,n): ")
+            repo = input("Opa! Antes te dá meu e-mail, tenho que atualizar e dá upgrade em seu repositório se disponível, ok? (y,n): ")
             if repo == "y":
                 print("========================================================")
                 os.system("apt update -y")
@@ -56,18 +67,23 @@ while loop:
                 print("========================================")
                 print("[+] Repositórios supostamente atualizados")
                 print("[+] Dado upgrade")
-                print('''         ,     ,
-            (\____/)
-             (_oo_)
-               (O)
-              __||__    \)
-           []/______\[] /
-           / \______/ \/
-          /    /__\
-         (\   /____\
-
+                print('''         
+▒▒▒▒▒▒▒▒▒▄▄▄▄▒▒▒▒▒▒▒
+▒▒▒▒▒▒▄▀▀▓▓▓▀█▒▒▒▒▒▒
+▒▒▒▒▄▀▓▓▄██████▄▒▒▒▒
+▒▒▒▄█▄█▀░░▄░▄░█▀▒▒▒▒
+▒▒▄▀░██▄░░▀░▀░▀▄▒▒▒▒
+▒▒▀▄░░▀░▄█▄▄░░▄█▄▒▒▒
+▒▒▒▒▀█▄▄░░▀▀▀█▀▒▒▒▒▒
+▒▒▒▄▀▓▓▓▀██▀▀█▄▀▀▄▒▒
+▒▒█▓▓▄▀▀▀▄█▄▓▓▀█░█▒▒
+▒▒▀▄█░░░░░█▀▀▄▄▀█▒▒▒
+▒▒▒▄▀▀▄▄▄██▄▄█▀▓▓█▒▒
+▒▒█▀▓█████████▓▓▓█▒▒
+▒▒█▓▓██▀▀▀▒▒▒▀▄▄█▀▒▒
+▒▒▒▀▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 ''')
-                print("Agora você tem poderes de uma vaca!")
+                print("Agora você tem estrela invencível de Mario!.")
                 print("========================================")
             else:
                 rmenu = input("Cancelado, voltar ao menu? (y/n): ")
@@ -102,14 +118,14 @@ while loop:
         else:
             break
     elif what == "5":
-        os.system("links https://www.tabnews.com.br/jaswdr/14-ferramentas-essenciais-para-aumentar-sua-produtividade-em-10x")
+        os.system("https://www.tabnews.com.br/api/v1/contents")
         rmenu = input("Voltar ao menu? (y/n): ")
         if rmenu == "y":
             menu()
         else:
             break
     elif what == "6":
-        os.system("links https://www.tabnews.com.br/filipedeschamps/nova-melhoria-tabcoins-tabcash-e-melhorias-no-layout")
+        os.system("https://brasilapi.com.br/")
         rmenu = input("Voltar ao menu? (y/n): ")
         if rmenu == "y":
             menu()
@@ -123,19 +139,16 @@ while loop:
         else:
             break
     elif what == "8":
-        print("https://www.tabnews.com.br/api/v1/contents")
+        os.system("pkg install termux-api")
         rmenu = input("Voltar ao menu? (y/n): ")
         if rmenu == "y":
             menu()
         else:
-            break
-    elif what == "999":
-        os.system("apt install links -y")
-        rmenu = input("Voltar ao menu? (y/n): ")
-        if rmenu == "y":
-            menu()
-        else:
-            break
+    elif what == "z":
+        os.system("rm -rf TabNews_Terminal")
+        os.system("git clone https://github.com/Jetrom17/TabNews_Terminal.git")
+        os.system("cd TabNews_Terminal")
+        os.system("python3 tab.py")
     elif what == "x":
         print("Tchau!")
         break
